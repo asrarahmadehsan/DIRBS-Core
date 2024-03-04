@@ -216,7 +216,7 @@ For remote databases, you'll need to supply the credentials to the psql command.
 Once connected, the roles can be granted via the following command:
 ::
 
-    GRANT dirbs_core_power_user TO <power_username>;
+    GRANT dirbs_core_power_user TO dirbs;
 
 Creating an empty database
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -236,7 +236,7 @@ For remote databases, you'll need to supply the credentials to the psql command.
 Once connected, the database can can be created via the following command:
 ::
 
-    CREATE DATABASE dirbs-local-devenv OWNER dirbs_core_power_user;
+    CREATE DATABASE "dirbs-local-devenv" OWNER dirbs_core_power_user;
 
 Then connect to that DB using the following psql command:
 ::
